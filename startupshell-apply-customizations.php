@@ -2,7 +2,7 @@
 /*
    Plugin Name: Startup Shell | Apply Customizations
    Plugin URI: https://merus.it
-   Version: 0.2
+   Version: 0.3
    Author: <a href="//merus.it">Merus</a>
    Description: Customizations for the Startup Shell | Apply portal.
    Text Domain: startupshell-apply-customizations
@@ -15,16 +15,16 @@ $StartupShellApplyCustomizations_minimalRequiredPhpVersion = '5.7';
 
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/startupshell/apply-plugin/',
+	'https://github.com/startupshell/apply-plugin',
 	__FILE__,
 	'startupshell-apply-customizations'
 );
 
 //Optional: If you're using a private repository, specify the access token like this:
-$myUpdateChecker->setAuthentication('notapplicable');
+//$myUpdateChecker->setAuthentication('notapplicable');
 
 //Optional: Set the branch that contains the stable release.
-$myUpdateChecker->setBranch('master');
+//$myUpdateChecker->setBranch('master');
 
 /**
  * Check the PHP version and give a useful error message if the user's version is less than the required version
