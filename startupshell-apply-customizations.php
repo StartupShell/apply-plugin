@@ -2,7 +2,7 @@
 /*
    Plugin Name: Startup Shell | Apply Customizations
    Plugin URI: https://merus.it
-   Version: 0.3
+   Version: 0.3.1
    Author: <a href="//merus.it">Merus</a>
    Description: Customizations for the Startup Shell | Apply portal.
    Text Domain: startupshell-apply-customizations
