@@ -156,6 +156,12 @@ class StartupShellApplyCustomizations_Plugin extends StartupShellApplyCustomizat
 
         add_filter( 'rul_before_user', 'redirectOnFirstLogin', 10, 4 );
 
+        // Modify the date picker on the onboard form to only display 4 future years
+        add_filter( 'gform_date_max_year', function ( $max_year, $form, $field ) {
+ 
+            return $form['id'] == 7 && $field->id == 5 ? date("Y")+4 : $max_year;
+        }, 10, 3 );
+
 
         // Adding scripts & styles to all pages
         // Examples:

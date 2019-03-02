@@ -102,8 +102,8 @@ class StartupShellApplyCustomizations_LifeCycle extends StartupShellApplyCustomi
      * @return void
      */
     public function addSettingsSubMenuPage() {
-        $this->addSettingsSubMenuPageToPluginsMenu();
-        //$this->addSettingsSubMenuPageToSettingsMenu();
+        //$this->addSettingsSubMenuPageToPluginsMenu();
+        $this->addSettingsSubMenuPageToSettingsMenu();
     }
 
 

@@ -11,6 +11,19 @@
 
 $StartupShellApplyCustomizations_minimalRequiredPhpVersion = '5.7';
 
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/startupshell/apply-plugin/',
+	__FILE__,
+	'startupshell-apply-customizations'
+);
+
+//Optional: If you're using a private repository, specify the access token like this:
+$myUpdateChecker->setAuthentication('notapplicable');
+
+//Optional: Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('master');
+
 /**
  * Check the PHP version and give a useful error message if the user's version is less than the required version
  * @return boolean true if version check passed. If false, triggers an error which WP will handle, by displaying
