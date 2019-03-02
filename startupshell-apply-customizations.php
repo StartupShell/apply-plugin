@@ -9,6 +9,8 @@
    License: GPLv3
   */
 
+/* Test Update */
+
 $StartupShellApplyCustomizations_minimalRequiredPhpVersion = '5.7';
 
 require 'plugin-update-checker/plugin-update-checker.php';
